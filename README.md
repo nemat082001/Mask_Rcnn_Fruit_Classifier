@@ -1,57 +1,76 @@
-Mask R-CNN Fruit Classifier and Quality Control System
-==============================
+### **README: Automated Fruit Classification and Grading System**
 
-Developed a Mask R-CNN model with a 94% F1 score to classify 48 fruit varieties from a 30,000-image dataset. Enhanced fruit detection precision to 86% using optimized boundary masking. Designed a 90.5% accurate anomaly detection system, revolutionizing automated fruit grading and sorting.
+---
 
-Project Organization
-------------
+## **Project Overview**
+This project leverages deep learning to automate fruit classification, detection, and grading, revolutionizing traditional sorting processes. A Mask R-CNN model was developed to classify 48 fruit varieties with high accuracy, optimized for precise boundary detection and anomaly detection to ensure quality control.
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+---
 
+## **Features**
+- **Fruit Classification**: Achieved a 94% F1 score on a 30,000-image dataset, identifying 48 fruit varieties.
+- **Enhanced Fruit Detection**: Optimized boundary masking techniques, improving detection precision to 86% for accurate sorting.
+- **Anomaly Detection**: Developed a system with 90.5% accuracy to identify defective or inedible fruits, enhancing grading efficiency.
 
---------
+---
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+## **Technologies Used**
+- **Deep Learning Frameworks**: TensorFlow/Keras or PyTorch.
+- **Model Architecture**: Mask R-CNN for segmentation and classification.
+- **Dataset**: 30,000 labeled fruit images for training and validation.
+- **Anomaly Detection**: Custom pipeline for detecting non-standard features.
+
+---
+
+## **Installation**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/repository-name.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd repository-name
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Prepare the dataset and place it in the `/data` directory.
+
+---
+
+## **Usage**
+1. **Train the Mask R-CNN Model**:
+   ```bash
+   python train_model.py
+   ```
+2. **Run Fruit Detection**:
+   ```bash
+   python detect_fruits.py --image_path <path_to_image>
+   ```
+3. **Perform Anomaly Detection**:
+   ```bash
+   python detect_anomalies.py --image_path <path_to_image>
+   ```
+
+---
+
+## **Results**
+- **Classification Accuracy**: 94% F1 score across 48 fruit varieties.
+- **Detection Precision**: 86% with optimized masking techniques.
+- **Anomaly Detection**: 90.5% accurate system for fruit grading.
+
+---
+
+## **Contributions**
+Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
+
+---
+
+## **License**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## **Contact**
+For inquiries or suggestions, contact **Md Nematullah** at **mdnematullah.iitkgp@gmail.com**.
